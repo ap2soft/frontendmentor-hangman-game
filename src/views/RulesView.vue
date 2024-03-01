@@ -1,25 +1,33 @@
 <template>
   <section>
     <header class="flex items-center justify-between">
-      <HeaderButton @click="emit('back')">
-        <BackIcon class="size-4" />
+      <HeaderButton class="md:p-5" @click="emit('back')">
+        <BackIcon class="size-4 md:size-6" />
       </HeaderButton>
-      <HowToPlay />
+      <div class="grow">
+        <HowToPlay class="ml-auto h-16 md:mx-auto md:h-28" />
+      </div>
     </header>
 
-    <main class="mt-12 grid gap-6">
+    <main class="mt-12 grid gap-6 md:gap-10">
       <article
         v-for="rule in rules"
         :key="rule.number"
-        class="grid gap-4 rounded-2xl bg-white p-6"
+        class="rounded-2xl bg-white p-6 md:flex md:flex-row md:items-center md:gap-8 md:rounded-5xl md:p-10"
       >
-        <h3 class="flex gap-3 text-2xl">
-          <span class="text-blue">{{ rule.number }}</span>
-          <span class="uppercase tracking-wide text-dark">
-            {{ rule.title }}
-          </span>
-        </h3>
-        <p class="text-lavender">{{ rule.text }}</p>
+        <span class="hidden text-7xl text-blue md:inline">
+          {{ rule.number }}
+        </span>
+
+        <div class="flex flex-col gap-2 md:gap-6">
+          <h3 class="flex gap-3 text-2xl">
+            <span class="text-blue md:hidden">{{ rule.number }}</span>
+            <span class="uppercase tracking-wide text-dark md:text-[2.5rem]">
+              {{ rule.title }}
+            </span>
+          </h3>
+          <p class="text-lavender md:text-[1.25rem]">{{ rule.text }}</p>
+        </div>
       </article>
     </main>
   </section>

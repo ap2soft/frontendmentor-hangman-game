@@ -1,5 +1,7 @@
 <template>
-  <div class="h-dvh bg-mobile bg-cover bg-center bg-no-repeat px-4 py-4">
+  <div
+    class="md:bg-tablet h-dvh bg-mobile bg-cover bg-center bg-no-repeat px-4 py-4 md:px-8 md:py-10"
+  >
     <StartView
       v-if="currentView === VIEWS.START"
       @new-game="startNewGame"

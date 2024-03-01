@@ -27,12 +27,12 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel
-              class="w-full max-w-md transform rounded-[3rem] bg-modal-gradient align-middle shadow-modal transition-all"
+              class="w-full max-w-md transform rounded-[3rem] bg-modal-gradient align-middle shadow-modal transition-all md:max-w-2xl"
             >
-              <DialogTitle as="h3" class="absolute -top-12 w-full">
+              <DialogTitle as="h3" class="absolute -top-12 w-full md:-top-20">
                 <slot name="title" />
               </DialogTitle>
-              <div class="pb-14 pt-24">
+              <div class="pb-14 pt-24 md:pt-36">
                 <slot name="body" />
               </div>
             </DialogPanel>

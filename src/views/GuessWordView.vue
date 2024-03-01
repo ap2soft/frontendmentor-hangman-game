@@ -1,10 +1,10 @@
 <template>
   <header class="flex items-center justify-between gap-6">
     <div class="flex items-center gap-6">
-      <HeaderButton @click="emit('select-category')">
-        <MenuIcon class="size-4" />
+      <HeaderButton class="md:p-5" @click="emit('select-category')">
+        <MenuIcon class="size-4 md:size-6" />
       </HeaderButton>
-      <h3 class="text-4xl text-white">{{ category }}</h3>
+      <h3 class="text-4xl text-white md:text-5xl">{{ category }}</h3>
     </div>
     <TheProgress :progress="triesLeft" :total="maxTries" />
   </header>

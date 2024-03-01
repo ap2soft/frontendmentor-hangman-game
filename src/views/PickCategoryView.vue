@@ -1,16 +1,18 @@
 <template>
-  <header class="flex items-center justify-between">
-    <HeaderButton @click="emit('back')">
-      <IconBack class="size-4" />
+  <header class="flex items-center justify-between gap-8">
+    <HeaderButton class="md:p-5" @click="emit('back')">
+      <IconBack class="size-4 md:size-6" />
     </HeaderButton>
-    <PickCategory class="w-2/3" />
+    <div class="grow">
+      <PickCategory class="w-2/3" />
+    </div>
   </header>
 
-  <main class="mt-8 grid gap-4">
+  <main class="mt-8 grid gap-4 md:mt-20 md:grid-cols-2">
     <ButtonBlue
       v-for="category in categoriesList"
       :key="category"
-      class="rounded-xl py-5 text-2xl"
+      class="md:rounded-5xl rounded-xl py-5 text-2xl md:py-16 md:text-5xl"
       @click="emit('select-category', category)"
     >
       {{ category }}

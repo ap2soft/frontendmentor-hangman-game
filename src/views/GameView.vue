@@ -18,14 +18,20 @@
 
   <ModalWindow :open="win || lose" class="min-h-48">
     <template #title>
-      <YouWinText v-if="win" class="mx-auto w-2/3" />
-      <YouLoseText v-if="lose" class="mx-auto w-2/3" />
+      <YouWinText v-if="win" class="mx-auto w-2/3 md:w-1/2" />
+      <YouLoseText v-if="lose" class="mx-auto w-2/3 md:w-1/2" />
     </template>
     <template #body>
-      <div class="grid place-items-center gap-4">
-        <ButtonBlue @click="continueGame">Continue</ButtonBlue>
-        <ButtonBlue @click="pickCategories">New category</ButtonBlue>
-        <ButtonPink @click="quitGame">Quit game</ButtonPink>
+      <div class="grid place-items-center gap-4 md:gap-8">
+        <ButtonBlue class="md:text-4xl" @click="continueGame">
+          Continue
+        </ButtonBlue>
+        <ButtonBlue class="md:text-4xl" @click="pickCategories">
+          New category
+        </ButtonBlue>
+        <ButtonPink class="md:text-4xl" @click="quitGame">
+          Quit game
+        </ButtonPink>
       </div>
     </template>
   </ModalWindow>

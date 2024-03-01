@@ -1,12 +1,12 @@
 <template>
   <div class="grid h-full place-items-center">
-    <ModalWindow class="w-full max-w-sm" open>
+    <ModalWindow class="w-full max-w-sm md:max-w-lg" open>
       <template #title>
         <Logo class="mx-auto w-2/3" />
       </template>
       <template #body>
         <div class="mt-8 grid place-items-center gap-8 pb-6">
-          <PlayButton @click="emit('new-game')" />
+          <PlayButton class="md:p-12" @click="emit('new-game')" />
           <ButtonBlue @click="emit('show-rules')" class="text-3xl">
             How to play
           </ButtonBlue>

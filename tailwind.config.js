@@ -20,6 +20,7 @@ export default {
       },
       backgroundImage: {
         mobile: "url('/src/assets/images/bg-mobile.svg')",
+        tablet: "url('/src/assets/images/bg-tablet.svg')",
         'pink-gradient':
           'linear-gradient(to bottom, rgb(254,113,254), rgb(113,153,255))',
         'pink-light-gradient':
@@ -41,6 +42,10 @@ export default {
         modal:
           '0 -8px 0 4px inset rgb(20, 14, 102),' +
           '0 6px 0 8px inset rgb(38, 99, 255)',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '2.5rem',
       },
     },
   },

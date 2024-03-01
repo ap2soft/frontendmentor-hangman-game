@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-9 gap-x-2 gap-y-3">
+  <div class="grid grid-cols-9 gap-x-2 gap-y-3 md:gap-x-3 md:gap-y-4">
     <ButtonWhite
-      class="grid place-content-center"
+      class="grid place-content-center md:rounded-3xl md:py-5 md:text-5xl"
       v-for="letter in letters"
       :key="letter.value"
       @click="emit('use-letter', letter.value)"
