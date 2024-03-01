@@ -34,6 +34,7 @@ export default {
         'pink-button':
           '0 -2px 0 3px inset rgb(20, 14, 102),' +
           '0 1px 0 6px inset rgb(198, 66, 251)',
+        'header-button': '0 -5px 0 -1px inset rgba(157, 45, 245, 0.25)',
         'play-button':
           '0 -4px 0 5px inset rgb(36, 48, 65),' +
           '0 -12px 0 11px inset rgb(157, 45, 254)',
