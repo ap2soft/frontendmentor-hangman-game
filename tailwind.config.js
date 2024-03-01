@@ -4,13 +4,6 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 export default {
   content: ['./index.html', './src/**/*.{js,vue}'],
   theme: {
-    fontSize: {
-      base: '1.625rem',
-      lg: '2rem',
-      xl: '3rem',
-      '2xl': '5.5rem',
-      '3xl': '8.5rem',
-    },
     colors: {
       dark: '#261676',
       blue: {
