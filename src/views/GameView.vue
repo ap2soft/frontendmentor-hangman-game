@@ -102,7 +102,8 @@ const continueGame = () => {
 }
 
 const quitGame = () => {
-  emit('back')
   reset()
+  // ModalWindow on the start page is not shown without this 😶‍🌫️
+  setTimeout(() => emit('back'), 500)
 }
 </script>
