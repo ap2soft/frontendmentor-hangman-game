@@ -4,15 +4,15 @@
       <IconBack class="size-4 md:size-6" />
     </HeaderButton>
     <div class="grow">
-      <PickCategory class="w-2/3" />
+      <PickCategory class="w-2/3 lg:mx-auto" />
     </div>
   </header>
 
-  <main class="mt-8 grid gap-4 md:mt-20 md:grid-cols-2">
+  <main class="mt-8 grid gap-4 md:mt-20 md:grid-cols-2 lg:grid-cols-3">
     <ButtonBlue
       v-for="category in categoriesList"
       :key="category"
-      class="md:rounded-5xl rounded-xl py-5 text-2xl md:py-16 md:text-5xl"
+      class="rounded-xl py-5 text-2xl md:rounded-5xl md:py-16 md:text-5xl"
       @click="emit('select-category', category)"
     >
       {{ category }}
