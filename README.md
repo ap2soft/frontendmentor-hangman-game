@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7084e48-f1ab-4cc0-a868-ff656fc0a29c/deploy-status)](https://app.netlify.com/sites/frontendmentor-hangman-game/deploys)
+
 # Frontend Mentor - Hangman game solution
 
 This is a solution to the [Hangman game challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/hangman-game-rsQiSVLGWn). 
@@ -33,8 +35,6 @@ Users should be able to:
 
 ### Screenshot
 
-*// TODO: Replace with tablet layout screenshot once implemented to match the challenge preview screenshot*
-
 ![](./screenshot.png)
 
 ### Links
@@ -42,7 +42,7 @@ Users should be able to:
 *// TODO*
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [frontendmentor-hangman-game.netlify.app](https://frontendmentor-hangman-game.netlify.app/)
 
 ## My process
 
