@@ -55,6 +55,8 @@ const categoriesList = computed(() => Object.keys(categoriesData.value ?? {}))
 const loadCategories = async () => {
   const { categories } = await (await fetch('data.json')).json()
   categoriesData.value = categories
+  // Temporarily, to show in-game board
+  selectCategory('Countries')
 }
 onMounted(() => loadCategories())
 
