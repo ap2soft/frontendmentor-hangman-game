@@ -53,10 +53,11 @@ Users should be able to:
 - Mobile-first workflow
 - [Vue3](https://vuejs.org/) - The Progressive JavaScript Framework
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+- [Headless UI](https://headlessui.com/) - Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
 
 ### What I learned
 
-Working on this challenge I learned how to make custom box shadows.
+Working on this challenge I learned how to make custom box shadows, how to get precise values from Figma design.
 
 In this project I first time worked with [Storybook](https://storybook.js.org/) - a frontend workshop for building UI components and pages in isolation.
 
