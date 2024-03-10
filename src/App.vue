@@ -29,8 +29,7 @@ const VIEWS = {
   GAME: 'game',
 }
 
-// Temporarily, to show in-game board
-const currentView = ref(VIEWS.GAME)
+const currentView = ref(VIEWS.START)
 
 const startNewGame = () => {
   currentView.value = VIEWS.GAME
