@@ -2,6 +2,7 @@
   <div
     class="h-dvh bg-mobile bg-cover bg-center bg-no-repeat px-4 py-4 md:bg-tablet md:px-8 md:py-10 lg:bg-desktop"
   >
+    <h1 class="sr-only">Hangman game</h1>
     <div class="lg:mx-auto lg:max-w-[90rem]">
       <StartView
         v-if="currentView === VIEWS.START"

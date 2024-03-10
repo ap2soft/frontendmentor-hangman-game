@@ -9,6 +9,7 @@
     v-bind="restAttrs"
   >
     <PlayIcon class="size-12 -translate-y-0.5 translate-x-0.5 drop-shadow-xl" />
+    <span class="sr-only">Start game</span>
   </button>
 </template>
 
