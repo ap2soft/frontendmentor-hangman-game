@@ -21,6 +21,7 @@ export default {
       backgroundImage: {
         mobile: "url('/src/assets/images/bg-mobile.svg')",
         tablet: "url('/src/assets/images/bg-tablet.svg')",
+        desktop: "url('/src/assets/images/bg-desktop.svg')",
         'pink-gradient':
           'linear-gradient(to bottom, rgb(254,113,254), rgb(113,153,255))',
         'pink-light-gradient':

@@ -1,16 +1,18 @@
 <template>
   <div
-    class="md:bg-tablet h-dvh bg-mobile bg-cover bg-center bg-no-repeat px-4 py-4 md:px-8 md:py-10"
+    class="h-dvh bg-mobile bg-cover bg-center bg-no-repeat px-4 py-4 md:bg-tablet md:px-8 md:py-10 lg:bg-desktop"
   >
-    <StartView
-      v-if="currentView === VIEWS.START"
-      @new-game="startNewGame"
-      @show-rules="showRules"
-    />
+    <div class="lg:mx-auto lg:max-w-[90rem]">
+      <StartView
+        v-if="currentView === VIEWS.START"
+        @new-game="startNewGame"
+        @show-rules="showRules"
+      />
 
-    <RulesView v-if="currentView === VIEWS.RULES" @back="gotoStart" />
+      <RulesView v-if="currentView === VIEWS.RULES" @back="gotoStart" />
 
-    <GameView v-if="currentView === VIEWS.GAME" @back="gotoStart" />
+      <GameView v-if="currentView === VIEWS.GAME" @back="gotoStart" />
+    </div>
   </div>
 </template>
 

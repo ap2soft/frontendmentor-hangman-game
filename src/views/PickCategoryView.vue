@@ -4,7 +4,7 @@
       <IconBack class="size-4 md:size-6" />
     </HeaderButton>
     <div class="grow">
-      <PickCategory class="w-2/3 lg:mx-auto" />
+      <PickCategory class="w-2/3 lg:mx-auto lg:max-w-3xl" />
     </div>
   </header>
 
